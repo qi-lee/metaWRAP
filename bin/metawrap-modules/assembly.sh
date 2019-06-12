@@ -158,7 +158,7 @@ if [ "$megahit_assemble" = true ]; then
 		 -r ${out}/unused_by_metaspades.fastq\
 		 -o ${out}/megahit\
 		 -t $threads\
-		 -m ${mem}000000000
+		 -m ${mem}000000000\
 		 --tmp-dir ${out}/megahit.tmp\
 		mv ${out}/unused_by_metaspades.fastq ${out}/metaspades/
 	else
